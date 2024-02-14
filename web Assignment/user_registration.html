@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #080808;
+      }
+      marquee {
+        background-color: aqua;
+      }
+      .marquee-container {
+        height: 300px;
+        background: url("./images/wall1.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>User Registration</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Username" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="E-mail" />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="marquee-container">
+      <marquee behavior="" direction="">
+        <h3>
+          Please kindly note that this form will be closed in two weeks time and
+          make sure you check your email for update.
+        </h3>
+      </marquee>
+    </div>
+  </body>
+</html>

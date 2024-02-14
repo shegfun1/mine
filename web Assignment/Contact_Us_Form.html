@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .red-asterisk {
+        color: red;
+      }
+      nav {
+        background-color: #3bbb42;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+      }
+
+      nav a:hover {
+        background-color: #cc116823;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Training Programms</a>
+        <a href="#">Online Application</a>
+        <a href="#">Latest News</a>
+        <a href="#">Affliated Courses</a>
+
+      </nav>
+    <form>
+      <h2>Contact Us</h2>
+      <label for="name">Name:<span class="red-asterisk">*</span></label>
+      <input type="text" id="name" placeholder="NAME" />
+
+      <label for="email">Email:<span class="red-asterisk">*</span></label>
+      <input type="email" id="email" placeholder="EMAIL" />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" placeholder="SUBJECT" />
+
+      <label for="message">Message:<span class="red-asterisk">*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Submit" />
+
+      <marquee behavior="" direction="">
+        <p>
+         <h2>Please fill out the required fields marked with
+            <span class="red-asterisk">*</span>.</h2> 
+        </p>
+      </marquee>
+    </form>
+  </body>
+</html>
