@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shegfun Gallery Site</title>
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      nav {
+        background-color: #3bbb42;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+      }
+
+      nav a:hover {
+        background-color: #cc116823;
+      }
+    </style>
+  </head>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">For More Gallery</a>
+    <a href="#">Contact Us</a>
+  </nav>
+  <body>
+    <div class="gallery">
+      <img src="./images/gr2.jpg" alt="Image 1" />
+      <img src="./images/gr4.jpg" alt="Image 3" />
+      <img src="./images/wall1.jpg" alt="Image 3" />
+    </div>
+  </body>
+</html>
