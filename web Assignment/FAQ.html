@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <style>
+      .question {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+      }
+      .question:hover {
+        background-color: chocolate;
+        border-block-start-color: rgb(241, 6, 37);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="question" onclick="toggleAnswer('faq1')">
+      Question 1: What is yuor Name?
+      <div id="faq1" class="answer">My name is Oyetade Emmanuel Olusegun.</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('faq2')">
+      Question 2: What is your State of origin?
+      <div id="faq2" class="answer">Am from Oyo State in Nigeria.</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('faq3')">
+      Question 3: Are a Male or Female?
+      <div id="faq3" class="answer">Male (Okunrin Meta).</div>
+    </div>
+    <div class="question" onclick="toggleAnswer('faq4')">
+      Question 4: What is your Occupation??
+      <div id="faq4" class="answer">
+        Am a civil servant from a reputable Organisation in Nigeria.
+      </div>
+    </div>
+    <div class="question" onclick="toggleAnswer('faq5')">
+      Question 5: May we know your best food?
+      <div id="faq5" class="answer">
+        "Lol" I don't have best food, any food that's delicious is my best food.
+      </div>
+    </div>
+    <div class="question" onclick="toggleAnswer('faq6')">
+      Question 6: What do you specialized on?
+      <div id="faq6" class="answer">
+        "O do Oju e" Weah Am into Maintenance and repairs of Computer and also a
+        Network Enginner.
+      </div>
+    </div>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
